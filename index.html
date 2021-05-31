@@ -52,12 +52,14 @@
 
     <aside id="aside">
         <div class="slidecontainer">
-            <h2>Temperature</h2>
-            <input type="range" min="0" max="100" value="50" class="slider" id="Tslider">
-            <h2>Pressure</h2>
-            <input type="range" min="0" max="100" value="50" class="slider" id="Pslider">
+                <h2>Temperature</h2>
+                <input type="range" min="0" max="200" value="100" class="slider" id="Tslider" oninput="this.nextElementSibling.value=this.value*2">
+                <output>50</output>
+                <h2>Pressure</h2>
+                <input type="range" min="0" max="100" value="100" class="slider" id="Pslider" oninput="this.nextElementSibling.value=this.value*2">
+                <output>101</output>
             <h2>Composition</h2>
-            <input type ="range" min="0" max="100" value ="50" class="slider" id = "Zslider">
+            <input type ="range" min="0" max="100" value ="50" class="slider" id = "Zslider">          
         </div>
     </aside>
 
